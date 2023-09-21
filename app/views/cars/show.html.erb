@@ -2,6 +2,10 @@
   <div class="container">
     <h1><%= @car.model %></h1>
     <p>$<%= @car.price_per_day %> per day</p>
-    <a class="btn btn-flat" href="#">Book now</a>
+    <a class="btn btn-flat" href=# >Book now</a>
   </div>
+</div>
+
+<div>
+  <%= render "booking_form", car: @car, booking: @booking %>
 </div>
